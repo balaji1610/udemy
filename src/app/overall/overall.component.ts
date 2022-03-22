@@ -34,13 +34,18 @@ if(listMenuLength<=1){
  }
  twoWayBinding ="";
 
-namList = ""
+namList = "";
 greetingsName ="Your Name"
 nameMethod(){
 this.greetingsName ="Hello "+this.namList;
 }
 
+dataV2 = "";
+loopStatement = false;
+clickButton(){
+this.loopStatement = true;
 
+}
 
 
 }  //end
