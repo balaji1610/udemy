@@ -6,13 +6,13 @@
 <!--
 <input type ="text" class="form-control" (input)="onUpdateServerName($event)"> -->
 <input type ="text" class="form-control" [(ngModel)]="servername">
-<p>{{servername}}</p>
+<!-- <p>{{servername}}</p> -->
 
 
 <br>
 <br>
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()"> Add </button> <!-- Property Binding-->
 
-<p>{{allowNewServer}}</p>
+<!-- <p>{{allowNewServer}}</p> -->
 
 <p>{{serverCreationStatus}}</p>

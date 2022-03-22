@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
-   servername = 'The Start';
+   servername = 'Server';
   allowNewServer = false;
   serverCreationStatus = "No server was Created"
 constructor() {
@@ -17,7 +17,7 @@ this.allowNewServer = true;
 } // Property Binding
 
 onCreateServer(){
-this.serverCreationStatus = "The Server Was created"
+this.serverCreationStatus = "The Server Was created Name is "+this.servername;
 
 }
 
@@ -26,6 +26,7 @@ onUpdateServerName(event:Event){
 this.servername = (<HTMLInputElement>event.target).value;
 
 }
+
 
   ngOnInit(): void {
   }
