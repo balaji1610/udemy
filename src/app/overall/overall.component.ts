@@ -32,5 +32,5 @@ if(listMenuLength<=1){
 
 
  }
-
+ twoWayBinding ="";
 }  //end
