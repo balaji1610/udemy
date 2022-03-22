@@ -33,4 +33,14 @@ if(listMenuLength<=1){
 
  }
  twoWayBinding ="";
+
+namList = ""
+greetingsName ="Your Name"
+nameMethod(){
+this.greetingsName ="Hello "+this.namList;
+}
+
+
+
+
 }  //end

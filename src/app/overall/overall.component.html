@@ -11,3 +11,14 @@
 <h1>Two Way Binding</h1>
 <input type ="text" class="form-control" [(ngModel)] = twoWayBinding>
 <p>{{twoWayBinding}}</p>
+<br>
+<br>  <!-- Form Databinding-->
+<input type ="text" class="form-control" placeholder="Enter Your Name" [(ngModel)] = namList>
+  <button type="button" class="btn btn-warning" (click)=nameMethod()>Add Your Name</button>
+  <br>
+  <p>{{greetingsName}}</p>
+<hr>
+<br>
+<br>
+
+
