@@ -1,8 +1,10 @@
 <!-- <h1>{{title}}</h1> -->
 
 
-<p>{{'server'}}  Id is {{ServerId}}  Server Status {{ServerStatus}}</p>
+<p [ngStyle]="{'background-color': getColor() }"> Id is {{ServerId}}  Server Status {{getSeverStatus()}}</p>
 
-<p>{{getDataInterpolation()}}</p>
+
+
+<!-- <p>{{getDataInterpolation()}} </p> -->
 
 
