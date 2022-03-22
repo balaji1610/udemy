@@ -7,13 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
-  fetchData = false;
+  allowNewServer = false;
+  serverCreationStatus = "No server was Created"
 constructor() {
 setTimeout(()=>{
-this.fetchData = true;
+this.allowNewServer = true;
 },5000)
 
 } // Property Binding
+
+onCreateServer(){
+this.serverCreationStatus = "The Server Was created"
+
+}
 
   ngOnInit(): void {
   }

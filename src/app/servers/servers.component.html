@@ -2,4 +2,8 @@
 <app-server></app-server>
 <app-server></app-server>
 
-<button class="btn btn-primary" [disabled]=!fetchData> Add </button> <!-- Property Binding-->
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()"> Add </button> <!-- Property Binding-->
+
+<p>{{allowNewServer}}</p>
+
+<p>{{serverCreationStatus}}</p>
