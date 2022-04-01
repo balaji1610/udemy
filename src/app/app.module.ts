@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms'; //
 import { ServerComponent } from './server/server.components';
 import { ServersComponent } from './servers/servers.component';
 import { OverallComponent } from './overall/overall.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { OverallComponent } from './overall/overall.component';
     AppComponent,
     ServerComponent,
     ServersComponent,
-    OverallComponent
+    OverallComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
