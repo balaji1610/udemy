@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
 
 @Component({
   selector: 'app-overall',
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./overall.component.css']
 })
 export class OverallComponent implements OnInit {
+  // @Input() message:string;
 
+  @Input()message="";
   constructor() { }
 
   ngOnInit(): void {
@@ -46,6 +48,28 @@ clickButton(){
 this.loopStatement = true;
 
 }
+
+serverElements = [];
+newServerName = '';
+newServerContent = '';
+
+onAddServer() {
+  this.serverElements.push({
+    type: 'server',
+    name: this.newServerName,
+    content: this.newServerContent
+  });
+}
+
+onAddBlueprint() {
+  this.serverElements.push({
+    type: 'blueprint',
+    name: this.newServerName,
+    content: this.newServerContent
+  });
+}
+
+
 
 
 }  //end

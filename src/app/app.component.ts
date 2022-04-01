@@ -7,11 +7,15 @@ import { Component } from '@angular/core';
   styles: [`
     .bg{
       color:red;
+    }.alignText{
+      text-align:center;
     }
 
   `]
 })
 export class AppComponent {
-  // title = 'udemy';
-  // name = 'Angular';
+  title = 'udemy';
+  // public name:string;
+  name='';
+
 }
